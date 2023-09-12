@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    
+}
+.container{
+    background: url(./background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% 0 10%;
+}
+.l{
+    color: red;
+}
+.links{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.links a{
+    text-decoration: none;
+}
+.links a:hover{
+    color: red;
+}
+.margin{
+    margin-top: 10px;
+}
+.margintop{
+    margin-top: 105%;
+}
+.margindown{
+    margin-bottom: 115%;
+}
+.container1{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10%;
+    border: 1px solid ;
+}
+.image img{
+    height: 300px;
+    width: 250px;
+}
+.see{
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+    column-gap: 20px;
+}
+.see a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+.see a:hover{
+    color: red;
+    text-decoration: underline wheat;
+}
+.container2{
+    background-color: black;
+    padding: 10%;
+}
+.combine{
+    display: grid;
+    grid-template-columns: 1.25fr 1.25fr 1.25fr;
+    gap: 10%;
+    
+}
+.develop{
+    background-color: rgba(219, 210, 210, 0.13);
+    text-align: center;
+    padding: 5%;
+    border-radius: 5%;
+    transition: 0.5s;
+}
+.develop:hover{
+    background-color: red;
+}
+.heading{
+    margin-bottom: 7.5%;
+}
+.para{
+    text-align:justify;
+}
+.container3{
+    background-color: black;
+    padding: 10%;
+}
+.image1 img{
+    border-radius: 5%;
+}
+.flex{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+}
+.text{
+    position: relative;
+    background-color: rgba(215, 8, 8, 0.79);
+    bottom: 40%;
+    visibility: hidden;
+}
+.gymson:hover{
+    visibility: hidden;
+    .text{
+        visibility: visible;
+    }
+}
+.myworks{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+}
+.card{
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+}
+.front{
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(0);
+    transition: 1s;
+}
+.front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.back{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+.card:hover .back{
+    transform: rotateY(0deg);
+}
+.card:hover .front{
+    transform: rotateY(180deg);
+}
+.full{
+    background-color: black;
+}
+.contact{
+    padding-left: 10%;
+    
+}
+.flex1{
+    display: flex;
+}
+.input{
+    margin-left: 50px;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.373);
+}
+.input1{
+    padding: 10px;
+    margin-bottom: 5%;
+    margin-left: 12.7%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.544);
+}
+.sitelinks{
+    background-color: black;
+    margin-right: 10%;
+}
+.input2{
+    padding: 10px;
+    margin-bottom: 5%;
+    margin-left: 16%;
+    width: 25%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.544);
+}
+.submit{
+    background-color: rgba(0, 0, 0, 0.105);
+    margin-left: 45%;
+    padding: 5PX;
+    transition: 1s;
+}
+.submit:hover{
+    background-color: rgba(255, 0, 0, 0.662);
+
+}
